@@ -5,12 +5,12 @@ import (
 	"os/exec"
 )
 
-func main()  {
-	var(
+func main() {
+	var (
 		cmd *exec.Cmd
 		err error
 	)
-	cmd = exec.Command("C:\\cygwin64\\bin\\bash.exe","-c","echo asdhhsdakdad;")
+	cmd = exec.Command("C:\\cygwin64\\bin\\bash.exe", "-c", "echo asdhhsdakdad")
 	err = cmd.Run()
 	fmt.Println(err)
 }
